@@ -15,8 +15,8 @@ namespace Sistema_de_votaciones
             int voto4 = 0;
 
             int aleatorio;
-            string[] candidatos = { "Luis Abinader", "Gonzalo Castillo", "Leonel Fernandez", "Guillermo Moreno" };
-            string[] partidos = { "Partido Revolucionario Moderno (PRM)", "Partido de la Liberacion Dominicana (PLD)", "Fuerza del Pueblo (FP)", "Alianza Pais (AP)" };
+            string[] candidatos = { "Rodolfo Castillo", "Luis Lara", "Ronald Diaz", "Pedro Martinez" };
+            string[] partidos = { "Partido Leones del Futuro (PLF)", "Partido Tiburones Congresuales (PTC)", " Partido Humanista (PH)", "Partido Liberal Nacional (PLN)" };
             int[] fundacion = {1940, 1970, 2020, 1993};
 
             for(int i = 0; i <=3; i++)
@@ -58,18 +58,18 @@ namespace Sistema_de_votaciones
 
             double resultado = voto1 + voto2 + voto3 + voto4;
 
-            double Abinader = (voto1 / resultado) * 100;
-            double Castillo = (voto2 / resultado) * 100;
-            double Fernandez = (voto3 / resultado) * 100;
-            double Guillermo = (voto4 / resultado) * 100;
+            double PLF = (voto1 / resultado) * 100;
+            double PTC = (voto2 / resultado) * 100;
+            double PH = (voto3 / resultado) * 100;
+            double PLN = (voto4 / resultado) * 100;
 
-            Console.WriteLine(candidatos[0] + " obtuvo " + voto1 + " Votos. Con un porcentaje de un " + Abinader + "%");
+            Console.WriteLine(candidatos[0] + " obtuvo " + voto1 + " Votos. Con un porcentaje de un " + PLF + "%");
             Console.WriteLine();
-            Console.WriteLine(candidatos[1] + " obtuvo " + voto2 + " Votos. Con un porcentaje de un " + Castillo + "%");
+            Console.WriteLine(candidatos[1] + " obtuvo " + voto2 + " Votos. Con un porcentaje de un " + PTC + "%");
             Console.WriteLine();
-            Console.WriteLine(candidatos[2] + " obtuvo " + voto3 + " Votos. Con un porcentaje de un " + Fernandez + "%");
+            Console.WriteLine(candidatos[2] + " obtuvo " + voto3 + " Votos. Con un porcentaje de un " + PH + "%");
             Console.WriteLine();
-            Console.WriteLine(candidatos[3] + " obtuvo " + voto4 + " Votos. Con un porcentaje de un " + Guillermo + "%");
+            Console.WriteLine(candidatos[3] + " obtuvo " + voto4 + " Votos. Con un porcentaje de un " + PLN + "%");
             Console.WriteLine();
 
             if (voto1 > voto2 && voto1 > voto3 && voto1 > voto4)
