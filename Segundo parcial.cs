@@ -28,7 +28,7 @@ namespace Sistema_de_votaciones
                 Console.WriteLine();
             }
             Console.Write("Presione ENTER para ver los resultados de las votaciones ");
-            var a = Console.ReadLine();
+            Console.ReadLine();
             Console.Clear();
 
             for (int i = 0; i < 1000; i++)
